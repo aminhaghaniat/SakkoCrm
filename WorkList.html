@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--
 نویسنده: ساتراس وب
 محصولات نام: مترونیک
@@ -288,8 +288,276 @@ Like: www.facebook.com/keenthemes
 						<!--begin::Content wrapper-->
 						<div class="d-flex flex-column flex-column-fluid">
 							<!--begin::Content-->
-							 
+							<div id="kt_app_content" class="app-content flex-column-fluid">
+								<!--begin::Content container-->
+								<div id="kt_app_content_container" class="app-container container-fluid">
+									<!--begin::مخاطبین اپلیکیشن- افزودن مخاطب جدید-->
+									<div class="row g-7 card ">
+										<div class="card-header">
+											<a class="btn btn-info btn-icon" data-bs-toggle="modal" data-bs-target="#addcall_modal" ><i class="fa fa-plus"></i></a>
+
+										</div>
+										
+										<div class="card-body" >
+											<table class="table ">
+												<thead>
+													<tr>
+														<th>#</th>
+														<th>شماره تماس</th>
+														<th>نام </th>
+														<th>توضیحات</th>
+														<th>وضعیت</th>
+														<th>عملیات</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>091326598</td>
+														<td>علی علوی</td>
+														<td>تماس</td>
+														<td><span class="badge badge-light-warning">در انظار تماس</span></td>
+														<td>
+															<a class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#acion_modal">عملیات</a>
+														</td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>091326598</td>
+														
+														<td></td>
+														<td></td>
+														<td><span class="badge badge-light-warning">در انظار تماس</span></td>
+														<td>
+															<a class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#acion_modal">عملیات</a>
+														</td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>091326598</td>
+														
+														<td>علی علوی</td>
+														<td></td>
+														<td><span class="badge badge-light-info">پیگیری</span></td>
+														<td>
+															<a class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#acion_modal">عملیات</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
 							<!--end::Content-->
+
+							<div class="modal fade" id="addcall_modal" tabindex="-1" aria-hidden="true">
+								<!--begin::Modal dialog-->
+								<div class="modal-dialog mw-650px">
+									<!--begin::Modal content-->
+									<div class="modal-content">
+										<!--begin::Modal header-->
+										<div class="modal-header pb-0 border-0 justify-content-end">
+											<!--begin::Close-->
+											<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+												<span class="svg-icon svg-icon-1">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</div>
+											<!--end::Close-->
+										</div>
+										<!--begin::Modal header-->
+										<!--begin::Modal body-->
+										<div id="dv_gateway" class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
+											<div class="row row-cols-1 row-cols-sm-2 rol-cols-md-1 row-cols-lg-2">
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Tags-->
+														<label class="fs-6 fw-semibold form-label mt-3">
+															<span class="required">نام و نام خانوادگی</span>
+															 
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<input type="text" class="form-control form-control-solid" name="email" value="" />
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+												</div>
+												<!--end::Col-->
+												<!--begin::Col-->
+												<div class="col">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Tags-->
+														<label class="fs-6 fw-semibold form-label mt-3">
+															<span class="required">شماره تماس</span>
+															
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<input type="text" class="form-control form-control-solid" name="phone" value="" />
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+												</div>
+												<!--end::Col-->
+											 
+											</div>
+											<div class="row  ">
+												<div class="col">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Tags-->
+														<label class="fs-6 fw-semibold form-label mt-3">
+															<span class="required">نتیجه تماس</span>
+															
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<textarea rows="5" class="form-control form-control-solid"></textarea>
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+												</div>
+											</div>
+											<div class="row  ">
+												<div class="col-6">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Tags-->
+														<label class="fs-6 fw-semibold form-label mt-3">
+															<span class="required">وضعیت</span>
+															
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<select class="form-select  " data-control="select2" data-hide-search="true" data-placeholder="انتخاب ">
+															<option>چواب نداد</option>
+															<option>منجر به فروش</option>
+															<option>پیگیری</option>
+														</select>
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+												</div>
+											</div>
+											<div class="separator mb-6"></div>
+														<!--end::Separator-->
+														<!--begin::عملیات buttons-->
+														<div class="d-flex justify-content-end">
+															<!--begin::Button-->
+															<button type="reset" data-kt-contacts-type="cancel" class="btn btn-light me-3">انصراف</button>
+															<!--end::Button-->
+															<!--begin::Button-->
+															<button type="submit" data-kt-contacts-type="submit" class="btn btn-primary">
+																<span class="indicator-label">ذخیره</span>
+																<span class="indicator-progress">لطفا صبر کنید...
+																<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+															</button>
+															<!--end::Button-->
+														</div>
+										</div>
+										<!--end::Modal body-->
+									</div>
+									<!--end::Modal content-->
+								</div>
+								<!--end::Modal dialog-->
+							</div>
+
+							<div class="modal fade" id="acion_modal" tabindex="-1" aria-hidden="true">
+								<!--begin::Modal dialog-->
+								<div class="modal-dialog mw-650px">
+									<!--begin::Modal content-->
+									<div class="modal-content">
+										<!--begin::Modal header-->
+										<div class="modal-header pb-0 border-0 justify-content-end">
+											<!--begin::Close-->
+											<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+												<span class="svg-icon svg-icon-1">
+													<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<rect opacity="0.5" x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="currentColor" />
+														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="currentColor" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</div>
+											<!--end::Close-->
+										</div>
+										<!--begin::Modal header-->
+										<!--begin::Modal body-->
+										<div   class="modal-body scroll-y mx-5 mx-xl-18 pt-0 pb-15">
+											 
+											<div class="row  ">
+												<div class="col">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Tags-->
+														<label class="fs-6 fw-semibold form-label mt-3">
+															<span class="required">نتیجه تماس</span>
+															
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<textarea rows="5" class="form-control form-control-solid"></textarea>
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+												</div>
+											</div>
+											<div class="row  ">
+												<div class="col-6">
+													<!--begin::Input group-->
+													<div class="fv-row mb-7">
+														<!--begin::Tags-->
+														<label class="fs-6 fw-semibold form-label mt-3">
+															<span class="required">وضعیت</span>
+															
+														</label>
+														<!--end::Tags-->
+														<!--begin::Input-->
+														<select class="form-select  " data-control="select2" data-hide-search="true" data-placeholder="انتخاب ">
+															<option>چواب نداد</option>
+															<option>منجر به فروش</option>
+															<option>پیگیری</option>
+														</select>
+														<!--end::Input-->
+													</div>
+													<!--end::Input group-->
+												</div>
+											</div>
+											<div class="separator mb-6"></div>
+														<!--end::Separator-->
+														<!--begin::عملیات buttons-->
+														<div class="d-flex justify-content-end">
+															<!--begin::Button-->
+															<button type="reset" data-kt-contacts-type="cancel" class="btn btn-light me-3">انصراف</button>
+															<!--end::Button-->
+															<!--begin::Button-->
+															<button type="submit" data-kt-contacts-type="submit" class="btn btn-primary">
+																<span class="indicator-label">ذخیره</span>
+																<span class="indicator-progress">لطفا صبر کنید...
+																<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+															</button>
+															<!--end::Button-->
+														</div>
+										</div>
+										<!--end::Modal body-->
+									</div>
+									<!--end::Modal content-->
+								</div>
+								<!--end::Modal dialog-->
+							</div>
 						</div>
 						<!--end::Content wrapper-->
 						<!--begin::Footer-->
